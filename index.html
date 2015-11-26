@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-language" content="zh-Hant-TW">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="三十九篇,閱讀,APP">
+    <title>三十九篇 - 39 COLUMNS</title>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Abel'>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Hotjar Tracking Code for 39columns.com -->
+    <script>
+    (function(h, o, t, j, a, r) {
+        h.hj = h.hj || function() {
+            (h.hj.q = h.hj.q || []).push(arguments)
+        };
+        h._hjSettings = {
+            hjid: 98079,
+            hjsv: 5
+        };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- END HOTJAR -->
+    <!--Start of Zopim Live Chat Script-->
+    <script type="text/javascript">
+    window.$zopim || (function(d, s) {
+        var z = $zopim = function(c) {
+                z._.push(c)
+            },
+            $ = z.s =
+            d.createElement(s),
+            e = d.getElementsByTagName(s)[0];
+        z.set = function(o) {
+            z.set.
+            _.push(o)
+        };
+        z._ = [];
+        z.set._ = [];
+        $.async = !0;
+        $.setAttribute("charset", "utf-8");
+        $.src = "//v2.zopim.com/?3SGp0icAUvTTbmbIz8CaToM57NXwq5Ck";
+        z.t = +new Date;
+        $.
+        type = "text/javascript";
+        e.parentNode.insertBefore($, e)
+    })(document, "script");
+    </script>
+    <!--End of Zopim Live Chat Script-->
+    <!--Start mix-->
+    <script type="text/javascript">
+    (function(e, b) {
+    if (!b.__SV) {
+        var a, f, i, g;
+        window.mixpanel = b;
+        b._i = [];
+        b.init = function(a, e, d) {
+            function f(b, h) {
+                var a = h.split(".");
+                2 == a.length && (b = b[a[0]], h = a[1]);
+                b[h] = function() {
+                    b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+                }
+            }
+            var c = b;
+            "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+            c.people = c.people || [];
+            c.toString = function(b) {
+                var a = "mixpanel";
+                "mixpanel" !== d && (a += "." + d);
+                b || (a += " (stub)");
+                return a
+            };
+            c.people.toString = function() {
+                return c.toString(1) + ".people (stub)"
+            };
+            i = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+            for (g = 0; g < i.length; g++) f(c, i[g]);
+            b._i.push([a, e, d])
+        };
+        b.__SV = 1.2;
+        a = e.createElement("script");
+        a.type = "text/javascript";
+        a.async = !0;
+        a.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+        f = e.getElementsByTagName("script")[0];
+        f.parentNode.insertBefore(a, f)
+    }
+    })(document, window.mixpanel || []);
+    mixpanel.init("fc15959381625fda107e201497cd0d6d");
+    </script>
+    <!--End mix-->
+    <script type="text/javascript" src="js/mix.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var ios = "http://itunes.apple.com/us/app/san-shi-jiu-pian/id974576926";
+        var google = "http://play.google.com/store/apps/details?id=com.app39c";
+        var button1 = document.getElementById("dbtn1");
+        var button2 = document.getElementById("dbtn3");
+        if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/iPod/i))) {
+            button1.href = ios;
+            button2.href = ios;
+        } else if (navigator.userAgent.match(/Android/i)) {
+            button1.href = google;
+            button2.href = google;
+        }
+        $("#down").click(function() {
+            $("html,body").animate({
+                scrollTop: 15000
+            }, 1500);
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="index.html">三十九篇</a> </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li> <a href="index.html">首頁</a> </li>
+                    <li> <a href="tryread.html">線上試閱</a> </li>
+                    <li> <a href="redeem.html" id="redeembtn">試刊號</a></li>
+                    <li> <a href="faq.html">常見問題</a></li>
+                    <li> <a href="#" id="down">聯絡我們</a> </li>
+                    <li> <a href="http://www.facebook.com/39Columns" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li> <a href="https://www.youtube.com/channel/UCRif7EbCrQipC2cA2UYJmrQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/iphone-skeleton1.png" id="phone">
+                </div>
+                <div class="col-md-6" id="header">
+                    <img src="img/logo.png" id="logo">
+                    <p id="intro">它是一本電子月刊，更像一本實驗書。
+                        <br>每期三十九位作者和你因文字一期一會。
+                    </p>
+                    <a class="btn btn-lg btn-primary" id="dbtn1" href="qrcode.html" target="_blank">免費下載<i class="fa fa-arrow-down"></i></a>
+                    <a class="btn btn-lg btn-primary" id="dbtn2" href="redeem.html" target="_blank">領試閱刊<i class="fa fa-book"></i></a>
+                    <p id="support">支援IOS/Android</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="section benifit">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 benifitlist">
+                    <h1 class="text-center title" style="margin-bottom:30px;">公益模式</h1>
+                    <p class="benifittitle">4&emsp;．&emsp;3&emsp;．&emsp;3</p>
+                    <p style="margin-bottom:50px;">以獨有模式，與公益團隊、作家共享文字成果</p>
+                    <div>
+                        <div class="col-md-4 benifitpart">
+                            <div class="icon">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <p>40%</p>
+                            <p>捐助至慈善機構</p>
+                        </div>
+                        <div class="col-md-4 benifitpart">
+                            <div class="icon">
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            <p>30%</p>
+                            <p>作家的稿費</p>
+                        </div>
+                        <div class="col-md-4 benifitpart">
+                            <div class="icon">
+                                <i class="fa fa-anchor"></i>
+                            </div>
+                            <p>30%</p>
+                            <p>營運收入</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section show">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center title" style="margin-bottom:100px;">實際畫面</h1>
+                <div class="col-md-4"> <img src="img/screen2.png" class="img-responsive screen"> </div>
+                <div class="col-md-4">
+                    <p class="funcintro">抓時間，抓幸福，從來不易。
+                        <br>但抓三十九篇，手續簡單，
+                        <br>只需一隻手指，讓你/妳一次擁有。 </p>
+                </div>
+                <div class="col-md-4"><img src="img/screen4.jpg" class="img-responsive screen"></div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="famous">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center title">名人推薦</h1>
+                    <br>
+                    <p class="text-center">他們說《三十九篇》是⋯⋯</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 famousbox"> <img src="img/fang.png" class="center-block img-circle img-responsive">
+                    <h3 class="text-center famousname">方文山</h3>
+                    <p class="text-center famoustext">"有別於捐贈、表演、做義⼯等，⽤文章換一個公益的點擊，是一件很新鮮的事。”</p>
+                </div>
+                <div class="col-md-4 famousbox"> <img src="img/duncan.png" class="center-block img-circle img-responsive">
+                    <h3 class="text-center famousname">Duncan</h3>
+                    <p class="text-center famoustext">"希望大家可以利用文字的力量，來幫助有需要幫助的人。”</p>
+                </div>
+                <div class="col-md-4 famousbox"> <img src="img/afu.png" class="center-block img-circle img-responsive">
+                    <h3 class="text-center famousname">鄧福如</h3>
+                    <p class="text-center famoustext">"就是付出一些什麼，那這些什麼又可以去幫助更多的人，我覺得這個活動是很有意義的。”</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="famous">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <iframe id="video" src="https://www.youtube.com/embed/4asDdRUYbz4" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section download">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a class="btn btn-lg btn-primary" id="dbtn3" href="qrcode.html">免費下載<i class="fa fa-arrow-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="media" style="padding-left:0px;padding-right:0px;">
+        <div class="container" style="padding-left:0px;padding-right:0px;">
+            <div class="row">
+                <div id="mediapic">
+                    <a href="http://www.hkcd.com.hk/content/2015-03/31/content_3438676.htm" target="_blank"><img src="img/press/00-02.png" class="img-responsive "></a>
+                    <a class="fancybox" title="Milk 15 April 2015" href="img/press/press-large-0416.jpg"><img src="img/press/00-04.png" class="img-responsive "></a>
+                    <a class="fancybox" title="TVB周刊 27 April 2015" href="img/press/press-large-0427.jpg"><img src="img/press/00-05.png" class="img-responsive "></a>
+                    <a href="http://hk.apple.nextmedia.com/supplement/special/art/20150508/19139272" target="_blank"><img src="img/press/00-06.png" class="img-responsive "></a>
+                    <a class="fancybox" title="東周刊 13 May 2015" href="img/press/press-large-0513.jpg"><img src="img/press/00-03.png" class="img-responsive "></a>
+                    <a href="http://topick.hket.com/article/605478/%E3%80%8A%E4%B8%89%E5%8D%81%E4%B9%9D%E7%AF%87%E3%80%8B%E5%9C%93%E8%AE%80%E8%80%85%E4%BD%9C%E5%AE%B6%E5%A4%A2%204%E6%88%90%E6%94%B6%E5%85%A5%E6%8D%90%E6%85%88%E5%96%84" target="_blank"><img src="img/press/00-01.png" class="img-responsive"></a>
+                    <a href="http://www.setn.com/News.aspx?NewsID=76562" target="_blank"><img src="img/press/00-07.png" class="img-responsive"></a>
+                    <a href="http://week.ltn.com.tw/Newbigpaper.html?P=7&Y=2015&M=06&D=13" target="_blank"><img src="img/press/00-08.png" class="img-responsive"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="section section-primary" id="contact">
+        <div class="container">
+            <div class="row">
+                <p>一般聯絡</p>
+                <p><a href="mailto:info@39columns.com">info@39columns.com</a></p>
+                <p>技術支援</p>
+                <p><a href="mailto:support@39columns.com">support@39columns.com</a></p>
+                <p>商務洽談</p>
+                <p><a href="mailto:business@39columns.com">business@39columns.com</a></p>
+                <br>
+                <p><a href="privacypolicy.html">私隱條例</a></p>
+                <p><a href="termsofuse.html">使用條款</a></p>
+                <br>
+                <p>三十九有限公司 © 2015</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

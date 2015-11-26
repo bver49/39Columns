@@ -1,0 +1,96 @@
+.accordion .panel-title {
+	color: #323232;
+	margin: 0;
+	margin-bottom: 0px;
+	padding: 8px;
+	-webkit-transition: .3s all ease-in-out;
+	-moz-transition: .3s all ease-in-out;
+	-o-transition: .3s all ease-in-out;
+	transition: .3s all ease-in-out;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	}
+.accordion .panel-title.active {
+	background: #f0f0f0;
+	}
+
+.accordion ol.list-step {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	}
+	
+.accordion ol.list-step li {
+	background: #ddd;
+	width: 23.4%;
+	display: block;
+	margin-left: 15px;
+	float: left;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	}
+.accordion ol.list-step li:hover {
+	background: #fff;
+	}
+.accordion ol.list-step li:first-child {
+	margin-left: 0;
+	}
+
+.accordion ul li.content {
+	max-width: 860px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	}
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	}
+	
+.visuallyhidden.focusable,
+.visuallyhidden.focusable,
+js .visuallyhidden {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+	}
+	
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus,
+js .visuallyhidden {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+	}
+	
+arfix:before, .clearfix:after {
+	content: "";
+	display: table;
+	}
+	
+arfix:after {
+	clear: both;
+	}
+	
+arfix {
+	*zoom: 1;
+	}
+	
+t-reset {
+	padding: 0;
+	list-style: none;
+	}
+.panel-container.list-reset {
+	outline: none;}

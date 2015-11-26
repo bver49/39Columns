@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-language" content="zh-Hant-TW">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="三十九篇,閱讀,APP">
+    <title>線上試閱 - 三十九篇 - 39 COLUMNS</title>
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Hotjar Tracking Code for 39columns.com -->
+    <script>
+    (function(h, o, t, j, a, r) {
+        h.hj = h.hj || function() {
+            (h.hj.q = h.hj.q || []).push(arguments)
+        };
+        h._hjSettings = {
+            hjid: 98079,
+            hjsv: 5
+        };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- END HOTJAR -->
+    <!--Start of Zopim Live Chat Script-->
+    <script type="text/javascript">
+    window.$zopim || (function(d, s) {
+        var z = $zopim = function(c) {
+                z._.push(c)
+            },
+            $ = z.s =
+            d.createElement(s),
+            e = d.getElementsByTagName(s)[0];
+        z.set = function(o) {
+            z.set.
+            _.push(o)
+        };
+        z._ = [];
+        z.set._ = [];
+        $.async = !0;
+        $.setAttribute("charset", "utf-8");
+        $.src = "//v2.zopim.com/?3SGp0icAUvTTbmbIz8CaToM57NXwq5Ck";
+        z.t = +new Date;
+        $.
+        type = "text/javascript";
+        e.parentNode.insertBefore($, e)
+    })(document, "script");
+    </script>
+    <!--End of Zopim Live Chat Script-->
+    <!--Start mix-->
+    <script type="text/javascript">
+    (function(e, b) {
+    if (!b.__SV) {
+        var a, f, i, g;
+        window.mixpanel = b;
+        b._i = [];
+        b.init = function(a, e, d) {
+            function f(b, h) {
+                var a = h.split(".");
+                2 == a.length && (b = b[a[0]], h = a[1]);
+                b[h] = function() {
+                    b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+                }
+            }
+            var c = b;
+            "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+            c.people = c.people || [];
+            c.toString = function(b) {
+                var a = "mixpanel";
+                "mixpanel" !== d && (a += "." + d);
+                b || (a += " (stub)");
+                return a
+            };
+            c.people.toString = function() {
+                return c.toString(1) + ".people (stub)"
+            };
+            i = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+            for (g = 0; g < i.length; g++) f(c, i[g]);
+            b._i.push([a, e, d])
+        };
+        b.__SV = 1.2;
+        a = e.createElement("script");
+        a.type = "text/javascript";
+        a.async = !0;
+        a.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+        f = e.getElementsByTagName("script")[0];
+        f.parentNode.insertBefore(a, f)
+    }
+    })(document, window.mixpanel || []);
+    mixpanel.init("fc15959381625fda107e201497cd0d6d");
+    </script>
+    <!--End mix-->
+    <script type="text/javascript" src="js/mix.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var ios = "http://itunes.apple.com/us/app/san-shi-jiu-pian/id974576926";
+        var google = "http://play.google.com/store/apps/details?id=com.app39c";
+        var button1 = document.getElementById("dbtn1");
+        var button2 = document.getElementById("dbtn3");
+        if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/iPod/i))) {
+            button1.href = ios;
+            button2.href = ios;
+        } else if (navigator.userAgent.match(/Android/i)) {
+            button1.href = google;
+            button2.href = google;
+        }
+        $("#down").click(function() {
+            $("html,body").animate({
+                scrollTop: 15000
+            }, 1500);
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="index.html">三十九篇</a> </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li> <a href="index.html">首頁</a> </li>
+                    <li> <a href="tryread.html">線上試閱</a></li>
+                    <li> <a href="redeem.html" id="redeembtn">試刊號</a></li>
+                    <li> <a href="faq.html">常見問題</a></li>
+                    <li> <a href="#" id="down">聯絡我們</a></li>
+                    <li> <a href="http://www.facebook.com/39Columns" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li> <a href="https://www.youtube.com/channel/UCRif7EbCrQipC2cA2UYJmrQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section id="issue" class="issue clearfix text-center">
+        <h1 class="arrow">線上試閱</h1>
+        <div class="issue-filter fadeInRight animated">
+            <ul class="text-center">
+                <li><a href="javascript:;" data-filter=".issue03" class="filter">第三期</a></li>
+                <li><a href="javascript:;" data-filter=".issue02" class="active filter">第二期</a></li>
+                <li><a href="javascript:;" data-filter=".issue01" class="filter">試刊號</a></li>
+            </ul>
+        </div>
+        <div class="project-wrapper">
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/01.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>外婆，我想把你綁在身邊 / 柳岩</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/02.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>汪國真精選新詩 / 汪國真</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/03.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>用一生實現音樂夢 / 黄韻玲</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/04.jpg" alt="">
+                <a class="fancybox" title="人生的感受，人心的感動 / 郭靜" href="img/articles01/04.jpg">
+                    <figcaption class="overlay">
+                        <h4>人生的感受，人心的感動 / 郭靜</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/05.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>父親和人生的蛋糕店 / Duncan</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/06.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>黑潮 / 白歆惠</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/07.jpg" alt="">
+                <a class="fancybox" title="煩惱即菩提 / 董啟章" href="img/articles01/07.jpg">
+                    <figcaption class="overlay">
+                        <h4>煩惱即菩提 / 董啟章</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/08.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>失落的拼圖 / 徐超斌</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/09.jpg" alt="">
+                <a class="fancybox" title="我們忘記了如何去輸 / 周國賢" href="img/articles01/09.jpg">
+                    <figcaption class="overlay">
+                        <h4>我們忘記了如何去輸 / 周國賢</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/10.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>愛的代價 / 蔣湘娟</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/11.jpg" alt="">
+                <a class="fancybox" title="藏不住的夜晚 / 宋冬野" href="img/articles01/11.jpg">
+                    <figcaption class="overlay">
+                        <h4>藏不住的夜晚 / 宋冬野</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/12.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>愛你的理想主義幼稚病 / 貓力</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/13.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>No.21的夢想 / 李響</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/14.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>播種夢想 收獲人生 / 蘇紅</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/15.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>翻滾吧！你我他，還有喵導 / 林育賢</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/16.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>欠錢的工人 / 袁凌</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/17.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>字由卅九 / 黃名漢</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/18.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>殺人狂的故事 / 蔡駿</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/19.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>莫高窟隨感 / 唐七</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/20.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>雪與貓 / 廖沙</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/21.jpg" alt="">
+                <a class="fancybox" title="貓 / 吳奕葳" href="img/articles01/21.jpg">
+                    <figcaption class="overlay">
+                        <h4>貓 / 吳奕葳</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/22.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>從前，我養過兩隻貓 / 冬眠</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/23.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>逆旅微塵 / 岳繆</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/24.png" alt="">
+                <figcaption class="overlay">
+                    <h4>逃生門 / 沈路</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/25.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>一封無法投遞的信 / 易品沁</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/26.png" alt="">
+                <figcaption class="overlay">
+                    <h4>爸爸的白頭髮 / 羅易成</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/27.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>Nai siluva lyenna / Nimloth & 慕定</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/28.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>其實，我們只是沒有好好說再見 / 芃岳</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/29.jpg" alt="">
+                <a class="fancybox" title="其實，我有一個怪僻 / 大彤好孩子" href="img/articles01/29.jpg">
+                    <figcaption class="overlay">
+                        <h4>其實，我有一個怪僻 / 大彤好孩子</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/30.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>黴 / 謝海勤</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/31.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>道先生 / 陳學</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/32.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>不夜之城 / 凌雲</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/33.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>白面郎君 / 飛翼</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/34.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>當我想起妳 / 情芯</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/35.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>誤點 / 麥志榮</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/36.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>等 / 蜻蜓</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/37.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>歸程 / 乘夕</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/38.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>路上速寫之鄉愁 / 離憂生</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <img src="img/issue01/39.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>415 / 三十九篇團隊</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue01">
+                <a class="fancybox" title="今期受惠慈善機構" href="img/ngo/ngo-01.jpg">
+                    <img id="ngo" src="img/ngo/ngo-00.jpg" alt="">
+                </a>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/01.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>因為文字，於是有光 / 三十九篇團隊</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/02.jpg" alt="">
+                <a class="fancybox" title="當我開始寫雞湯 / 陸琪" href="img/articles02/02.jpg">
+                    <figcaption class="overlay">
+                        <h4>當我開始寫雞湯 / 陸琪</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/03.jpg" alt="">
+                <a class="fancybox" title="入境遊客 / 笛子" href="img/articles02/03.jpg">
+                    <figcaption class="overlay">
+                        <h4>入境遊客 / 笛子</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/04.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>醬油 / 易轟</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/05.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>我在不丹學會「快樂」 / 謝茜嘉</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/06.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>因為我是女人 / 五味娘</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/07.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>沒有WIFI之夏 / 皮下</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/08.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>幽默的葬禮 / 劉天賜</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/09.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>人類的進步史就是一部流浪史 / 王文先</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/10.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>字 / 謬心</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/11.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>恭喜，終於看見了 / 藤井樹</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/12.jpg" alt="">
+                <a class="fancybox" title="廚房時光 / 李烈" href="img/articles02/12.jpg">
+                    <figcaption class="overlay">
+                        <h4>廚房時光 / 李烈</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/13.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>單車流浪 / 超級查花</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/14.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>父親與貓 / 吳毅平</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/15.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>流浪的毛小HIGH / 光良</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/16.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>流浪 / 1992</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/17.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>回憶的任意門 / 倪遠韻</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/18.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>夜 / 700碼</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/19.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>現在、過去與未來：做一顆夜空中簡單的星星 / 李洪濤</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/20.jpg" alt="">
+                <a class="fancybox" title="聽聽這個世界的聲音 / 蕭煌奇" href="img/articles02/20.jpg">
+                    <figcaption class="overlay">
+                        <h4>聽聽這個世界的聲音 / 蕭煌奇</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/21.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>小事一件 / 仲卿</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/22.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>曾是畏寒鳥 / 張曰人</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/23.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>旅行在章節之間 練習說再見 / 黃于洋</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/24.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>各有前因莫羨人 / 深雪</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/25.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>大等喊 / 烏青</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/26.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>我想，改變不是ㄧ件壞事 / 劉容嘉</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/27.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>長安 / 錦瑟</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/28.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>壞了 / 是詩</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/29.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>沒有WIFI之夏 / 洛河</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/30.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>你是我捨不得丟棄的痛苦 / 無艷君</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/31.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>Serendipity：不期而遇的奇遇點 / Keledoll</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/32.jpg" alt="">
+                <a class="fancybox" title="世界上有兩種人⋯⋯ / 黃雅麗" href="img/articles02/32.jpg">
+                    <figcaption class="overlay">
+                        <h4>世界上有兩種人⋯⋯ / 黃雅麗</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/33.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>活著 / 吳俊余</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/34.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>禮物 / 小克</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/35.jpg" alt="">
+                <a class="fancybox" title="第一天的奇想 / 阿非" href="img/articles02/35.jpg">
+                    <figcaption class="overlay">
+                        <h4>第一天的奇想 / 阿非</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/36.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>浪人 / 張若水</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/37.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>隨意門 / 搬家慢</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/38.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>茉莉香片 / 小百合</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <img src="img/issue02/39.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>停止說那麼多「如果」 / 辰亦儒</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue02">
+                <a class="fancybox" title="今期受惠慈善機構" href="img/ngo/ngo-02.jpg">
+                    <img id="ngo" src="img/ngo/ngo-00.jpg" alt="">
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/01.jpg" alt="">
+                <a class="fancybox" title="時間十四行 / 廖偉棠" href="img/articles03/01.jpg">
+                    <figcaption class="overlay">
+                        <h4>時間十四行 / 廖偉棠</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/02.jpg" alt="">
+                <a class="fancybox" title="那些電影教我的事 - 婚姻 / 水某" href="img/articles03/02.jpg">
+                    <figcaption class="overlay">
+                        <h4>那些電影教我的事 - 婚姻 / 水某</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/03.jpg" alt="">
+                <a class="fancybox" title="我的寵物情緣 / 宣萱" href="img/articles03/03.jpg">
+                    <figcaption class="overlay">
+                        <h4>我的寵物情緣 / 宣萱</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/04.jpg" alt="">
+                <a class="fancybox" title="牛仔褲比愛情長久 / Joel Kwong" href="img/articles03/04.jpg">
+                    <figcaption class="overlay">
+                        <h4>牛仔褲比愛情長久 / Joel Kwong</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/05.jpg" alt="">
+                <a class="fancybox" title="時間 / Middle" href="img/articles03/05.jpg">
+                    <figcaption class="overlay">
+                        <h4>時間 / Middle</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/06.jpg" alt="">
+                <a class="fancybox" title="給流浪的精靈安個家 / 畢夏" href="img/articles03/06.jpg">
+                    <figcaption class="overlay">
+                        <h4>給流浪的精靈安個家 / 畢夏</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/07.jpg" alt="">
+                <a class="fancybox" title="當下已無愛恨 / 吳若權" href="img/articles03/07.jpg">
+                    <figcaption class="overlay">
+                        <h4>當下已無愛恨 / 吳若權</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/08.jpg" alt="">
+                <a class="fancybox" title="蟬 / 董啟章" href="img/articles03/08.jpg">
+                    <figcaption class="overlay">
+                        <h4>蟬 / 董啟章</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/09.jpg" alt="">
+                <a class="fancybox" title="陪Teresa尋找獸醫夢 / 薛涵予" href="img/articles03/09.jpg">
+                    <figcaption class="overlay">
+                        <h4>陪Teresa尋找獸醫夢 / 薛涵予</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/10.jpg" alt="">
+                <a class="fancybox" title="冬日的陽光 / 黄小蕾" href="img/articles03/10.jpg">
+                    <figcaption class="overlay">
+                        <h4>冬日的陽光 / 黄小蕾</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/11.jpg" alt="">
+                <a class="fancybox" title="2014年的最後一天 / 明星辰" href="img/articles03/11.jpg">
+                    <figcaption class="overlay">
+                        <h4>2014年的最後一天 / 明星辰</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/12.jpg" alt="">
+                <a class="fancybox" title="在不美好中找到美好 / 阿飛" href="img/articles03/12.jpg">
+                    <figcaption class="overlay">
+                        <h4>在不美好中找到美好 / 阿飛</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/13.jpg" alt="">
+                <a class="fancybox" title="雲南遊記 / 梁子庚" href="img/articles03/13.jpg">
+                    <figcaption class="overlay">
+                        <h4>雲南遊記 / 梁子庚</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/14.jpg" alt="">
+                <a class="fancybox" title="每個人都希望自己的朋友好 / 鍾欣凌" href="img/articles03/14.jpg">
+                    <figcaption class="overlay">
+                        <h4>每個人都希望自己的朋友好 / 鍾欣凌</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/15.jpg" alt="">
+                <a class="fancybox" title="原來愛不是我們想像 / 黃小柔" href="img/articles03/15.jpg">
+                    <figcaption class="overlay">
+                        <h4>原來愛不是我們想像 / 黃小柔</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/16.jpg" alt="">
+                <a class="fancybox" title="有一天你就會明白 / 馮勉恒" href="img/articles03/16.jpg">
+                    <figcaption class="overlay">
+                        <h4>有一天你就會明白 / 馮勉恒</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/17.jpg" alt="">
+                <a class="fancybox" title="深呼吸，告訴自己這個世界有多麼的美好。 / 安鈞璨" href="img/articles03/17.jpg">
+                    <figcaption class="overlay">
+                        <h4>深呼吸，告訴自己這個世界有多麼的美好。 / 安鈞璨</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/18.jpg" alt="">
+                <a class="fancybox" title="不忘初衷 - 我的音樂路 / 鄧福如" href="img/articles03/18.jpg">
+                    <figcaption class="overlay">
+                        <h4>不忘初衷 - 我的音樂路 / 鄧福如</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/19.jpg" alt="">
+                <a class="fancybox" title="意外的訪客 / 瞿友寧" href="img/articles03/19.jpg">
+                    <figcaption class="overlay">
+                        <h4>意外的訪客 / 瞿友寧</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/20.jpg" alt="">
+                <a class="fancybox" title="喜劇六種 / 盲罪" href="img/articles03/20.jpg">
+                    <figcaption class="overlay">
+                        <h4>喜劇六種 / 盲罪</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/21.jpg" alt="">
+                <a class="fancybox" title="解縛 / 錄簌" href="img/articles03/21.jpg">
+                    <figcaption class="overlay">
+                        <h4>解縛 / 錄簌</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/22.jpg" alt="">
+                <a class="fancybox" title="遷移 / 花非花" href="img/articles03/22.jpg">
+                    <figcaption class="overlay">
+                        <h4>遷移 / 花非花</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/23.jpg" alt="">
+                <a class="fancybox" title="玫瑰的顏色 / 路知微" href="img/articles03/23.jpg">
+                    <figcaption class="overlay">
+                        <h4>玫瑰的顏色 / 路知微</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/24.jpg" alt="">
+                <a class="fancybox" title="普魯斯特時刻 / 鄭沛" href="img/articles03/24.jpg">
+                    <figcaption class="overlay">
+                        <h4>普魯斯特時刻 / 鄭沛姍</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/25.jpg" alt="">
+                <a class="fancybox" title="陀飛輪的氣味 / 然後" href="img/articles03/25.jpg">
+                    <figcaption class="overlay">
+                        <h4>陀飛輪的氣味 / 然後</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/26.jpg" alt="">
+                <a class="fancybox" title="致母親 / 林一" href="img/articles03/26.jpg">
+                    <figcaption class="overlay">
+                        <h4>致母親 / 林一</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/27.jpg" alt="">
+                <a class="fancybox" title="「你行得上台，唔好怯呀！怯，你就輸一世！」 / 鍾雅雯" href="img/articles03/27.jpg">
+                    <figcaption class="overlay">
+                        <h4>「你行得上台，唔好怯呀！怯，你就輸一世！」 / 鍾雅雯</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/28.jpg" alt="">
+                <a class="fancybox" title="十方普賢：峨眉山上美的偶像 / 無枝" href="img/articles03/28.jpg">
+                    <figcaption class="overlay">
+                        <h4>十方普賢：峨眉山上美的偶像 / 無枝</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/29.jpg" alt="">
+                <a class="fancybox" title="我在旅途中遇到的孩子 / 佳琪" href="img/articles03/29.jpg">
+                    <figcaption class="overlay">
+                        <h4>我在旅途中遇到的孩子 / 佳琪</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/30.jpg" alt="">
+                <a class="fancybox" title="擦掉你的命運 / 寧若曦" href="img/articles03/30.jpg">
+                    <figcaption class="overlay">
+                        <h4>擦掉你的命運 / 寧若曦</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/31.jpg" alt="">
+                <a class="fancybox" title="藍 / 黃韻如" href="img/articles03/31.jpg">
+                    <figcaption class="overlay">
+                        <h4>藍 / 黃韻如</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/32.jpg" alt="">
+                <a class="fancybox" title="諸葛先生的隨意門 / 老非" href="img/articles03/32.jpg">
+                    <figcaption class="overlay">
+                        <h4>諸葛先生的隨意門 / 老非</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/33.jpg" alt="">
+                <a class="fancybox" title="帶著我的貓去流浪 / 蘑菇" href="img/articles03/33.jpg">
+                    <figcaption class="overlay">
+                        <h4>帶著我的貓去流浪 / 蘑菇</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/34.jpg" alt="">
+                <a class="fancybox" title="妳冷嗎？ / 緬梔藍" href="img/articles03/34.jpg">
+                    <figcaption class="overlay">
+                        <h4>妳冷嗎？ / 緬梔藍</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/35.jpg" alt="">
+                <a class="fancybox" title="紅外線 / 淤青貝貝" href="img/articles03/35.jpg">
+                    <figcaption class="overlay">
+                        <h4>紅外線 / 淤青貝貝</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/36.jpg" alt="">
+                <a class="fancybox" title="隕落 / 逆光" href="img/articles03/36.jpg">
+                    <figcaption class="overlay">
+                        <h4>隕落 / 逆光</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/37.jpg" alt="">
+                <a class="fancybox" title="我們想流浪卻不想做流浪漢 / 韓爾西" href="img/articles03/37.jpg">
+                    <figcaption class="overlay">
+                        <h4>我們想流浪卻不想做流浪漢 / 韓爾西</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/38.jpg" alt="">
+                <a class="fancybox" title="沒有wifi之夏 - 炙烤的時間 / 乘夕" href="img/articles03/38.jpg">
+                    <figcaption class="overlay">
+                        <h4>沒有wifi之夏 - 炙烤的時間 / 乘夕</h4>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <img src="img/issue03/39.jpg" alt="">
+                <figcaption class="overlay">
+                    <h4>文青的美好時代 / 《三十九篇》團隊</h4>
+                </figcaption>
+            </figure>
+            <figure class="mix issue-item issue03">
+                <a class="fancybox" title="今期受惠慈善機構" href="img/ngo/ngo-03.jpg">
+                    <img id="ngo" src="img/ngo/ngo-00.jpg" alt="">
+                </a>
+            </figure>
+        </div>
+        <a class="btn btn-lg btn-primary" id="dbtn3" href="qrcode.html">免費下載<i class="fa fa-arrow-down"></i></a>
+        <p id="support" style="padding-left:0px; ">支援IOS/Android</p>
+    </section>
+</body>
+<footer class="section section-primary" id="contact">
+    <div class="container">
+        <div class="row">
+            <p>一般聯絡</p>
+            <p><a href="mailto:info@39columns.com">info@39columns.com</a></p>
+            <p>技術支援</p>
+            <p><a href="mailto:support@39columns.com">support@39columns.com</a></p>
+            <p>商務洽談</p>
+            <p><a href="mailto:business@39columns.com">business@39columns.com</a></p>
+            <br>
+            <p><a href="privacypolicy.html">私隱條例</a></p>
+            <p><a href="termsofuse.html">使用條款</a></p>
+            <br>
+            <p>三十九有限公司 © 2015</p>
+        </div>
+    </div>
+</footer>
+
+</html>
